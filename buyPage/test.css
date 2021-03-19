@@ -1,0 +1,139 @@
+#footerCss {
+  font-size: 30px;
+}
+
+.display-6 {
+  font-size: 25px;
+}
+
+.video {
+  background-image: url("/videos/videoBackground.png");
+}
+
+#videoText {
+  position: absolute;
+  color: white;
+  top: 10%;
+  margin-top: 3%;
+  margin-right: 23%;
+}
+
+#videoText2 {
+  position: absolute;
+  color: white;
+  top: 10%;
+  margin-top: 1%;
+  margin-right: 1%;
+  font-size: 150px;
+}
+
+.images {
+  overflow: hidden;
+}
+
+#m3Img, #m4Img {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  border: 1px solid;
+  border-color: white;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+#m3Img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  cursor: pointer;
+}
+
+#m4Img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+  cursor: pointer;
+}
+
+.m3-info {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  font-family: Sans-serif;
+  top: 100%;
+  margin-left: 3%;
+}
+
+.m4-info {
+  position: absolute;
+  color: white;
+  font-size: 40px;
+  font-family: Sans-serif;
+  top: 100%;
+  margin-left: 53%;
+}
+
+#img1, #img2, #img3, #img4 {
+  -webkit-transition: all 1s all;
+  transition: all 1s all;
+  -webkit-animation: imgAnim 1s;
+          animation: imgAnim 1s;
+}
+
+@-webkit-keyframes imgAnim {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imgAnim {
+  0% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#testHover {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+#testButton {
+  border-color: white;
+}
+
+#testHover:hover {
+  width: 200px;
+  height: 10px;
+}
+
+#series1Btn, #buttonLine, #series2Btn, #series3Btn, #series4Btn, #series5Btn, #series6Btn {
+  border: 0;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  color: black;
+  text-align: center;
+}
+
+#btnGroup:hover {
+  width: 130px;
+  border: 1px solid;
+}
+
+.blank {
+  height: 350px;
+}
+
+#mainPageFooter {
+  width: 100%;
+  height: 40px;
+}
+/*# sourceMappingURL=test.css.map */

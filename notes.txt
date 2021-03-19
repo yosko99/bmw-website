@@ -1,0 +1,245 @@
+
+След натискане на бутона submit изпраща input към сървър?
+  <form action="https://freecatphotoapp.com/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL">
+    <button type='submit'>Submit</button>
+  </form>
+
+
+Можеш да добавиш 'required' ако искаш input да е задължително поле
+
+----------------
+Радио бутони
+<label for="indoor"> 
+  <input id="indoor" type="radio" name="indoor-outdoor">Indoor 
+</label>
+добавя се for за по късно вграждане 
+name трябва да е еднакво с другите за да се знае
+
+----------------
+checkbox
+<label for="loving"><input id="loving" type="checkbox" name="personality"> Loving</label>
+
+--------
+
+--govna:grey; //Променлива в css
+color: var(--govna,black) ползвам променливата, а ако не я намира става черно
+
+-------
+em - мерна единица (съобразява се с големината на фонта)
+
+--------
+Colors have several characteristics including hue, saturation, and lightness. 
+CSS3 introduced the hsl() property as an alternative way to pick a color by directly stating these characteristics.
+
+----
+.heart
+.heart::after{
+content: ""; //седи празно ако само си играеш с форми
+}
+.heart::before{
+}
+
+--------
+animation-fill-mode: forwards; // анимацията седи и не се маха след дадените секунди
+animation-iteration-count: 3; // колко пъти да се повтори анимацията
+linear // една и съща през цялото време
+ease // започва бавно после бързо и после пак бавно
+ease-out // бързо в началото после бавно
+ease-in // бавно в началото но после бързо
+------
+
+e.stopPropagation() // спира capture и bubble eventlistener
+
+document.addEventListener("click", e => {
+	if(e.target.matches('div')) {
+	console.log('azis');
+	}
+}) //проверява за клик на всички div и принтира азис 
+
+---------- 
+добра практика е да добавяш alt към изображенията за по лесно търсене
+
+----------
+
+<nav>
+  <a href="/html/">HTML</a> |
+  <a href="/css/">CSS</a> |
+  <a href="/js/">JavaScript</a> |
+  <a href="/python/">Python</a>
+</nav> // не се задължително но момже да се ползва ако имаме блок от линкове
+
+
+----------
+
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+</form> // label трябва да се същия като input id
+
+--------------
+
+<form>
+  <fieldset>
+    <legend>Choose one of these three items:</legend>
+    <input id="one" type="radio" name="items" value="one">
+    <label for="one">Choice One</label><br>
+  </fieldset>
+</form> // ако имаме радио бутони за избор (например като какъв пол имаш)
+	//ги обгражедаме с fieldset и за въпроса даваме legend
+
+-------------
+
+<label for="input1">Enter a date:</label>
+<input type="date" id="input1" name="input1"> // избираме си дата
+
+---------------
+
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+//The <time> tag defines a specific time (or datetime).
+
+//The datetime attribute of this element is used translate the time into
+a machine-readable format so that browsers can offer to add date
+reminders through the user's calendar, and search engines can produce 
+smarter search results.
+
+------------------------
+
+<button accesskey="b">Important Button</button>
+
+//се ползва за по бърз достъп до статията с бутон от клавиатурата
+(за хората използващи само клавиатура)
+
+--------------------------
+
+<div tabindex="0">I need keyboard focus!</div>
+
+//ще мине през него ако изполваш табулация 
+
+----------------------------
+
+@media (max-height: 800px){ 
+    p {
+    font-size: 10px;
+      }
+  }
+
+//променя си големината на фонта когато големита на екрана е 800 пиксела или по малко
+
+<picture>
+	<source srcset='Logo.png' media="(min-width:800px)'>
+	<img src='logo-small.png' style='width:700px'>
+</picture>
+
+//когато намалиш размера на браузера ще ползва по малкото изображение
+//(добро е за мобилни устройства за пазене на мобилни данни
+
+-----------------------------
+
+//вместо да ползам em или px 
+
+vw (viewport width): 10vw would be 10% of the viewport's width.
+vh (viewport height): 3vh would be 3% of the viewport's height.
+vmin (viewport minimum): 70vmin would be 70% of the viewport's smaller dimension (height or width).
+vmax (viewport maximum): 100vmax would be 100% of the viewport's bigger dimension (height or width).
+
+--------------------------------
+
+<p>My mother has <span style="color:blue">blue</span> eyes.</p>
+
+//давам стил вътре в текст
+
+-----------------------------
+
+<a href="https://www.w3schools.com" target="_blank">Visit W3Schools</a>
+
+_blank	Opens the linked document in a new window or tab
+_self	Opens the linked document in the same frame as it was clicked (this is default)
+_parent	Opens the linked document in the parent frame
+_top	Opens the linked document in the full body of the window
+
+---------------------------
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Coffee" href="coffee.htm">
+</map>
+
+
+------------------------------
+
+<fieldset>
+	<legend>Favorites</legend>
+	<div>
+		<label>Color</label>
+	</div>
+	<div>
+		<input list='color-list' type='text>
+		<datalist id='color-list>
+			<option value='Red'>
+			<option value='blue'>
+		</datalist>
+	</div>
+</fieldset>
+
+//добре изглеждаща опция за избиране на неща само с html
+ <input type='color'>
+ type = date / time 
+//можеш да си избереш цвят 
+
+------------------
+flex-direction
+justify-content
+justify-self - start/center/end; не запълва целия div
+align-items
+flex-wrap 
+flex-shrink // 1-3 определяш колко пъти да се смалява
+flex-grow
+flex-basis // дава базов размер преди да смали или го нарпави голям
+align-self;
+justify-items:center //центрира всички в класа
+flex: 1 0 10px; will set the item to flex-grow: 1;, flex-shrink: 0;, and flex-basis: 10px;
+
+-------------------
+
+display:grid;
+grid-template-columns: 50px 50px;
+grid-template-rows: 50px 50px;
+
+You can use absolute and relative units like px and em in CSS Grid to define the size of rows and columns. You can use these as well:
+fr: sets the column or row to a fraction of the available space,
+auto: sets the column or row to the width or height of its content automatically,
+%: adjusts the column or row to the percent width of its container.
+Here's the code that generates the output in the preview:
+grid-template-columns: auto 50px 10% 2fr 1fr;
+
+grid-column-gap // растояние между тях
+grid-row-gap:10px;
+grid-gap// се равнява на двете горе
+grid-column:1/3;
+grid-row:1/3;
+grid-template-areas: //мога да си предрасположа как да стои грида
+  "header header header"
+  "advert content content"
+  "footer footer footer";
+.item1 { //след това давам на определен обект това място и той отива там
+  grid-area: header;
+}
+
+grid-template-rows: repeat(100, 50px);
+repeat(auto-fill, minmax(60px, 1fr)); // вместо ти да казваш колко да са то само
+repeat(auto-fit, minmax(60px, 1fr)) // същото като ауто-фил обаче не оставя празни места
+grid-template-columns: 100px minmax(50px, 200px); //максимална и минимална големина
+
+------------------------------------
+
+div p {color:red;} // избира всички p в определен div
+div > p {color:red;} // всички без последната
+div + p {color:red;} // избира следващия обект след избрания div
+div ~ p {color:red;} // всички други следващи обекти не само един 

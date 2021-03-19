@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="design.css">
+    <title>Inferno</title>
+</head>
+<body>
+
+<!-- header navbar -->
+    <nav class="navbar navbar-light sticky-top bg-light pt-0 pb-0">
+        <a class='navbar-brand col-md-9'  href=#>
+            <img src="logo.png" width="70" height="70" id='indexButton'>
+        </a>
+        <div class="btn-group">
+            <button class="btn btn-danger m-1"  type="button" id='newModelsBtn'>New Models</button>
+            <button class="btn btn-danger m-1" type="button" id='loyalCardBtn'>Loyal Card</button>
+            <button class="btn btn-danger m-1"  type="button" id='aboutUsBtn'>About us</button>
+        </div>
+    </nav>
+    
+<!-- first image welcome -->
+    <h1 id='mainPageAd'>ЕМОЦИОНАЛНО ПРЕДЛОЖЕНИЕ.<br>РАЦИОНАЛЕН ИЗБОР</h1>
+    <div class="d-flex justify-content-center">
+        <div id="carouselExampleSlidesOnly" class="carousel slide w-75 carousel-fade " data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./img/carousel1.png">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/carousel2.png">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/carousel3.jpg">
+              </div>
+            </div>
+          </div>
+    </div>
+
+<!-- background gray -->
+    <img src="./img/backFirstPage.png">
+
+<!-- welcome -->
+    <h1 class="display-5 position-absolute" id='welcomeText'>ДОБРЕ ДОШЛИ В INFERNO РУСЕ. <br>
+        С какво можем да ви бъдем полезни?</h1>
+    
+    
+<!-- Button ads -->
+    <div class="d-flex justify-content-center">
+        <div class="ads-images">
+            <button class='btn px-0' id='firstAdBtn'>
+                <img src="./img/adImg1.png" type='button'>
+            </button>
+            <button class="btn px-0" id='secondAdBtn'>
+                <img src="./img/adImg2.png" type='button'> 
+            </button>
+            <button class="btn px-0" id='thirdAdBtn'>
+                <img src="./img/adImg3.png" type='button'>
+            </button>
+            <button class="btn px-0" id='fourthAdBtn'>
+                    <img src="./img/adImg4.png" type='button'>
+            </button>
+        </div>   
+    </div>
+    <a class="btn btn-primary" href="/site_in_process_js/buyPage/index.html" id='buyCarBtn' role="button">Вижте офертите</a>
+    <!-- <button class="btn btn-primary" href='./buyPage/index.html' id='buyCarBtn'>Вижте офертите</button> -->
+
+<!-- Buy back ad -->
+    <div class="d-flex justify-content-center">
+        <div  id='buyBack'>
+            <br>НИЕ ЩЕ ИЗКУПИМ ВАШИЯ АВТОМОБИЛ. <br>
+                Попълнете формата за контакт и ние ще се свържем с вас. <br> <br>
+                <button class='btn btn-outline-primary '>Научете повече</button>
+        </div>
+    </div>
+
+<!-- Oil change ad -->
+    <div class="d-flex justify-content-center">
+        <img class=" w-60 d-block " id='oilChangeAd' src="./img/oilChangeImg.png" alt="">
+    </div>
+<!-- Foooter -->
+    <div class="d-flex justify-content-center">
+        <hr style="width:70%" id='lineOne'>
+    </div>
+    
+    <div class="d-flex p-3 my-auto justify-content-center">
+        <img src="logo.png " width="70" height='70' alt="">
+    </div>
+    <div class="d-flex">
+        <div class="mx-auto">
+            <h1 class='display-6' id='footerCss'>
+                <img src="./img/phoneImg.png" width="30" height="30" alt="">
+                +000000000
+            </h1>
+        </div>
+        <div class="mx-auto">
+            <h1 class='display-6' id='footerCss'>
+                <img src="./img/emailPng.png" width="30" height="30" alt="">
+                demo@text.mail
+            </h1>
+        </div>
+        <div class="mx-auto">
+            <h1 class='display-6' id='footerCss'>
+                <img src="./img/locationPng.png" width="30" height="30" alt="">
+                Rousse
+            </h1>
+        </div>
+    </div>
+    <div class="" id='mainPageFooter'></div>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+      <script src='main.js'></script>
+      <script type="text/javascript" src='/site_in_process_js/js/bootstrap.js'></script>
+      
+      <script>
+          $('.carousel').carousel({
+              interval: 3500
+            })
+        </script>
+    </body>
+</html>
